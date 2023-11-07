@@ -1,3 +1,4 @@
+using ITBlog.Core;
 using ITBlog.Data;
 using Microsoft.AspNetCore.Mvc;
 using ITBlog.Models;
@@ -10,24 +11,24 @@ namespace ITBlog.Controllers;
 public class BlogsController : ControllerBase
 {
 
-    private readonly ApiDbContext _context;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public BlogsController(ApiDbContext context)
+    public BlogsController(IUnitOfWork unitOfWork)
     {
-        _context = context;
+        _unitOfWork = unitOfWork;
     }
     
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        return Ok(await _context.Blogs.ToListAsync());
+        return Ok(await _unitOfWork.Blogs.All());
     }
         
     [HttpGet]
     [Route(template:"GetById")]
     public async Task<IActionResult> Get(int id)
     {
-        var blog = await _context.Blogs.FirstOrDefaultAsync(x => x.Id == id);
+        var blog = await _unitOfWork.Blogs.GetById(id);
         if (blog == null) return NotFound();
         
         return Ok(blog);
@@ -37,8 +38,8 @@ public class BlogsController : ControllerBase
     [Route(template:"AddBlog")]
     public async Task<IActionResult> AddBlog(Blog blog)
     {
-        _context.Blogs.Add(blog);
-        await _context.SaveChangesAsync();
+        _unitOfWork.Blogs.Add(blog);
+        await _unitOfWork.CompleteAsync();
         return Ok();
     }
     
@@ -46,12 +47,11 @@ public class BlogsController : ControllerBase
     [Route(template:"DeleteBlog")]
     public async Task<IActionResult>DeleteBlog(int id)
     {
-        var blog = await _context.Blogs.FirstOrDefaultAsync(x => x.Id == id);
+        var blog = await _unitOfWork.Blogs.GetById(id);
 
         if (blog == null) return NotFound();
 
-        _context.Blogs.Remove(blog);
-        await _context.SaveChangesAsync();
+        await _unitOfWork.Blogs.Delete(blog);
 
         return NoContent();
     }
@@ -60,13 +60,12 @@ public class BlogsController : ControllerBase
     [Route(template:"UpdateBlog")]
     public async Task<IActionResult> UpdateBlog(Blog blog)
     {
-        var existBlog = await _context.Blogs.FirstOrDefaultAsync(x => x.Id == blog.Id);
+        var existBlog = await _unitOfWork.Blogs.GetById(blog.Id);
         if (existBlog == null) return NotFound();
 
-        existBlog.Title = blog.Title;
-        existBlog.Body = blog.Body;
-
-        await _context.SaveChangesAsync();
+        await _unitOfWork.Blogs.Update(blog);
+        await _unitOfWork.CompleteAsync();
+        
         
         return NoContent();
     }
