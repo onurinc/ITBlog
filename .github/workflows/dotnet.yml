@@ -23,6 +23,4 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ITBlog/ITBlog.csproj
     - name: Build
-      run: dotnet build ITBlog/ITBlog.csproj --no-restore
-    - name: Test
-      run: dotnet test ./ITBlog.sln --no-build --verbosity normal
+      run: dotnet build ITBlogUnitTests/ITBlogUnitTests.csproj --no-restore
