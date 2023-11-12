@@ -15,7 +15,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         _context = context;
         _logger = logger;
-        this._dbSet = _context.Set<T>();
+        this._dbSet = context.Set<T>();
     }
     
     
@@ -35,6 +35,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         await _dbSet.AddAsync(entity);
         return true;
     }
+    
 
     public virtual async Task<bool> Update(T entity)
     {

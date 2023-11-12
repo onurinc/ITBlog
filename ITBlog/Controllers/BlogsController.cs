@@ -1,8 +1,6 @@
 using ITBlog.Core;
-using ITBlog.Data;
 using Microsoft.AspNetCore.Mvc;
 using ITBlog.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace ITBlog.Controllers;
 
@@ -50,7 +48,7 @@ public class BlogsController : ControllerBase
         var blog = await _unitOfWork.Blogs.GetById(id);
 
         if (blog == null) return NotFound();
-
+ 
         await _unitOfWork.Blogs.Delete(blog);
         await _unitOfWork.CompleteAsync();
 

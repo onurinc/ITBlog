@@ -12,18 +12,23 @@ public class BlogRepository : GenericRepository<Blog>, IBlogRepository
         
     }
 
-    public override async Task<Blog?> GetById(int id)
-    {
-        try
-        {
-            return await _context.Blogs.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
-    }
-    
+    // public async Task<Blog> GetBlogById(int blogId)
+    // {
+    //     try
+    //     {
+    //         return await dbSet.Where(x => x.blogId == blogId)
+    //             .FirstOrDefaultAsync();
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         _logger.LogError(ex, "{Repo} GetBlogById method has generated an error", typeof(BlogRepository));
+    //         return null;
+    //     }
+    // }
 
+
+    public Task<Blog> GetBlogById(int blogId)
+    {
+        throw new NotImplementedException();
+    }
 }
