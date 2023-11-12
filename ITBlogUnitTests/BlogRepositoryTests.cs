@@ -3,11 +3,10 @@ using ITBlog.Core.Repositories;
 using ITBlog.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
+
+using Moq;using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using ITBlog.Models;
-using Assert = NUnit.Framework.Assert;
 
 namespace ITBlogUnitTests;
 
@@ -98,7 +97,7 @@ public class BlogRepositoryTests : IDisposable
         var blog = await this._repository.GetById(blogToSearch);
 
         //Assert
-        Assert.That(blog, Is.EqualTo(null));
+        Assert.AreEqual(null, blog);
     }
     
     [TestMethod()]

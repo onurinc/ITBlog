@@ -6,12 +6,6 @@ C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\appsettings.Development
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\appsettings.json
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\ITBlog.exe
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\testhost.exe
-C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\NUnit3.TestAdapter.dll
-C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\NUnit3.TestAdapter.pdb
-C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\nunit.engine.dll
-C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\nunit.engine.api.dll
-C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\nunit.engine.core.dll
-C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\testcentric.engine.metadata.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Microsoft.TestPlatform.AdapterUtilities.dll
@@ -41,7 +35,6 @@ C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Moq.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\NuGet.Frameworks.dll
-C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\nunit.framework.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\SQLitePCLRaw.core.dll
 C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
