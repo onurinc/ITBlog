@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\OnurI\AppData\Local\JetBrains\Rider2023.2\resharper-host\temp\Rider\vAny\CoverageData\_ITBlog.1035764194\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2194bfac_002Ddb1e_002D47e1_002D8d01_002D3f815a376305/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateBlogAsync" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C2E8286-A6E0-4034-BD2E-2075F463ECF2::net7.0::ITBlogUnitTests.BlogRepositoryTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::1C2E8286-A6E0-4034-BD2E-2075F463ECF2::net7.0::ITBlogUnitTests.BlogRepositoryTests.CreateBlogAsync&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d98d9204_002Decf1_002D4f04_002D899e_002D19bbbfd433be/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BlogRepositoryTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::1C2E8286-A6E0-4034-BD2E-2075F463ECF2::net7.0::ITBlogUnitTests.BlogRepositoryTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
