@@ -24,6 +24,6 @@ public class BlogRepository : GenericRepository<Blog>, IBlogRepository
             throw;
         }
     }
-
+    
 
 }

@@ -52,6 +52,7 @@ public class BlogsController : ControllerBase
         if (blog == null) return NotFound();
 
         await _unitOfWork.Blogs.Delete(blog);
+        await _unitOfWork.CompleteAsync();
 
         return NoContent();
     }

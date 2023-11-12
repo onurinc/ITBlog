@@ -16,7 +16,6 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     {
         _context = context;
         var _logger = loggerFactory.CreateLogger("logs");
-
         Blogs = new BlogRepository(_context, _logger);
     }
     
