@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code Projects\\ITBlog\\ITBlog\\ITBlog.csproj": {}
+    "C:\\Code Projects\\ITBlog\\itblog\\ITBlog.csproj": {}
   },
   "projects": {
-    "C:\\Code Projects\\ITBlog\\ITBlog\\ITBlog.csproj": {
+    "C:\\Code Projects\\ITBlog\\itblog\\ITBlog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code Projects\\ITBlog\\ITBlog\\ITBlog.csproj",
+        "projectUniqueName": "C:\\Code Projects\\ITBlog\\itblog\\ITBlog.csproj",
         "projectName": "ITBlog",
-        "projectPath": "C:\\Code Projects\\ITBlog\\ITBlog\\ITBlog.csproj",
+        "projectPath": "C:\\Code Projects\\ITBlog\\itblog\\ITBlog.csproj",
         "packagesPath": "C:\\Users\\OnurI\\.nuget\\packages\\",
-        "outputPath": "C:\\Code Projects\\ITBlog\\ITBlog\\obj\\",
+        "outputPath": "C:\\Code Projects\\ITBlog\\itblog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OnurI\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -157,3 +157,5 @@ C:\Code Projects\ITBlog\ITBlogUnitTests\obj\Debug\net7.0\refint\ITBlogUnitTests.
 C:\Code Projects\ITBlog\ITBlogUnitTests\obj\Debug\net7.0\ITBlogUnitTests.pdb
 C:\Code Projects\ITBlog\ITBlogUnitTests\obj\Debug\net7.0\ITBlogUnitTests.genruntimeconfig.cache
 C:\Code Projects\ITBlog\ITBlogUnitTests\obj\Debug\net7.0\ref\ITBlogUnitTests.dll
+C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Npgsql.dll
+C:\Code Projects\ITBlog\ITBlogUnitTests\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
