@@ -72,11 +72,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/7.0.13": {
+      "Microsoft.EntityFrameworkCore/7.0.14": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.13",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.13",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.14",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.14",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
@@ -95,7 +95,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.13": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.14": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -108,7 +108,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.13": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.14": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -756,6 +756,41 @@
           }
         }
       },
+      "Npgsql/7.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "[7.0.11, 8.0.0)",
+          "Microsoft.EntityFrameworkCore.Abstractions": "[7.0.11, 8.0.0)",
+          "Microsoft.EntityFrameworkCore.Relational": "[7.0.11, 8.0.0)",
+          "Npgsql": "7.0.6"
+        },
+        "compile": {
+          "lib/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NuGet.Frameworks/6.5.0": {
         "type": "package",
         "compile": {
@@ -1065,7 +1100,10 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "7.0.13",
+          "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.13",
+          "Npgsql": "7.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
@@ -1255,10 +1293,10 @@
         "microsoft.data.sqlite.core.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/7.0.13": {
-      "sha512": "fACONzJtzLJQ29soFqBr0OzgmIYMHV7y9AEZ18hqGx2K0FMJNqezAcfzovc4WI+kT9IvOFQKhDNTl5DMimgkMA==",
+    "Microsoft.EntityFrameworkCore/7.0.14": {
+      "sha512": "0KYkAemPygW6yzifciFlmMzkO4sI4Dw69xLgwg3ui5rXJS5XvzuAWVvfdrKJciqeCbCnVS/ZbOWpcwWgqce5bQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/7.0.13",
+      "path": "microsoft.entityframeworkcore/7.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1266,35 +1304,35 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.13": {
-      "sha512": "VxChscv7EsedfuhMAqJ82IxWBYyScCnMwMb1j4+264rIZteeWhj0CJX+u139JCCE9TcvoT97IsCmbb5Jcav5tg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.14": {
+      "sha512": "aEcXDSYpDdD5wdIRKTqcS44f3W4capqQ1BWVRPJgacATfHkO62RX9Nnh0hUFg+rei9OLuJp0Y4zsy1fNeOXv5g==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.13",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.13": {
-      "sha512": "3GiAd0b30L+31/86mtpLDf0Hf4Fnze4yx7hVXaW4wBd6KomIqacGaf+s9rMYNdJZEyKvUJPaBsghY+FgKOoAHg==",
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.14": {
+      "sha512": "esI4RF6mix4DDFBhWB9k1vJxAL8GouSf5ZV8oFJoVsIQ9d2J3MPgC1VL2qM9Vw5cH7Vg7TzRyKNpCRXFVkWs9w==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.13",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.7.0.14.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -2380,6 +2418,48 @@
         "packageIcon.png"
       ]
     },
+    "Npgsql/7.0.6": {
+      "sha512": "TAqvwRnm3NJ0QvN7cvu6geJkbI0XPzGVRElVY5hF4gsgA+BnE12x6GM1TLhdeq+7ZKvvo3BD8jXKnXmr3tvdEw==",
+      "type": "package",
+      "path": "npgsql/7.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.7.0.6.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.11": {
+      "sha512": "cHEgEz0ldXc9wVANs8sJqC+3eilqefrkasCBgaVT0tyj8tb1p3/pwy2ngjboNkDG3M0z+xJsJ4jC5p8wySAM3w==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/7.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "lib/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "NuGet.Frameworks/6.5.0": {
       "sha512": "QWINE2x3MbTODsWT1Gh71GaGb5icBz4chS8VYvTgsBnsi8esgN6wtHhydd7fvToWECYGq7T4cgBBDiKD/363fg==",
       "type": "package",
@@ -2761,6 +2841,7 @@
       "ITBlog >= 1.0.0",
       "MSTest.TestAdapter >= 3.1.1",
       "MSTest.TestFramework >= 3.1.1",
+      "Microsoft.EntityFrameworkCore >= 7.0.14",
       "Microsoft.EntityFrameworkCore.InMemory >= 7.0.13",
       "Microsoft.NET.Test.Sdk >= 17.7.1",
       "Moq >= 4.20.69",
@@ -2817,6 +2898,10 @@
           "MSTest.TestFramework": {
             "target": "Package",
             "version": "[3.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.14, )"
           },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
